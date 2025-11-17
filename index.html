@@ -1,80 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Portfolio | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">My Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="flexbox.html" class="nav-link">Flexbox</a>
-                <a href="grid.html" class="nav-link">Grid Gallery</a>
-                <a href="blog-post.html" class="nav-link">About</a>
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation component (flexbox) -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">MyPhotoSite</a>
+      <div class="links">
+        <a href="index.html" class="active">Home</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="grid.html">Grid</a>
+        <a href="blog-post.html">Blog</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Capturing Moments</h1>
-        <p class="subtitle">A collection of life through the lens</p>
-    </header>
+  <header class="hero">
+    <h1>Bold. Colorful. Photographic.</h1>
+    <p class="tag">A small portfolio showcasing sunsets, extreme sports, travel, and more.</p>
+  </header>
 
-    <!-- Featured Categories Preview -->
-    <main class="container">
-        <section class="categories-preview">
-            <h2>Featured Collections</h2>
-            
-            <div class="category-grid">
-                <div class="category-card">
-                    <div class="placeholder-image vertical">
-                        <span>Sunsets</span>
-                    </div>
-                    <h3>Golden Hours</h3>
-                    <p>Chasing light across horizons</p>
-                </div>
+  <main class="container">
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>Hi — I’m building a photo portfolio that highlights colorful, high-impact images. This site focuses on letting photos breathe against a dark backdrop so each shot pops.</p>
+    </section>
 
-                <div class="category-card">
-                    <div class="placeholder-image vertical">
-                        <span>Extreme Sports</span>
-                    </div>
-                    <h3>Adrenaline</h3>
-                    <p>Moments of pure intensity</p>
-                </div>
+    <section class="featured">
+      <h2>Featured Clip</h2>
+      <div class="video-wrap">
+        <video controls muted loop>
+          <source src="images/featured.mp4" type="video/mp4">
+          Your browser doesn't support video.
+        </video>
+      </div>
+    </section>
 
-                <div class="category-card">
-                    <div class="placeholder-image vertical">
-                        <span>Travel</span>
-                    </div>
-                    <h3>Wanderlust</h3>
-                    <p>Stories from around the world</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="callouts">
+      <div class="card">
+        <h3>Sunsets</h3>
+        <p>Warm, dramatic color studies that glow on the dark canvas.</p>
+      </div>
+      <div class="card">
+        <h3>Extreme Sports</h3>
+        <p>High action, frozen in time — perfect for bold layouts.</p>
+      </div>
+      <div class="card">
+        <h3>Travel</h3>
+        <p>Places and moments collected from trips and adventures.</p>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About</h4>
-                <p>Capturing life's beautiful moments through photography.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <p>Instagram | Email | Contact</p>
-            </div>
-            <div class="footer-section">
-                <h4>Site</h4>
-                <p>&copy; 2024 My Portfolio</p>
-            </div>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <p>© 2025 MyPhotoSite · Built for Web Design</p>
+  </footer>
 </body>
 </html>

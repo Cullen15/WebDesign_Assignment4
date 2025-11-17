@@ -1,118 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Grid Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Grid | Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">My Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="flexbox.html" class="nav-link">Flexbox</a>
-                <a href="grid.html" class="nav-link active">Grid Gallery</a>
-                <a href="blog-post.html" class="nav-link">About</a>
-            </div>
-        </div>
-    </nav>
+  <div class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">MyPhotoSite</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="grid.html" class="active">Grid</a>
+        <a href="blog-post.html">Blog</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Main Content -->
-    <main class="container">
-        <h2>Photo Gallery - Grid Layout</h2>
-        
-        <!-- Grid Demo 1: 2 Column -->
-        <section class="content-section">
-            <h3 class="demo-title">Two Column Grid</h3>
-            <div class="grid-container grid-2col">
-                <div class="grid-item">
-                    <span>Sunset Photo 1</span>
-                </div>
-                <div class="grid-item">
-                    <span>Sunset Photo 2</span>
-                </div>
-            </div>
-        </section>
+  <main class="container">
+    <h1>Photo Grid</h1>
+    <p class="lead">A 3×3 responsive grid. Drop your images into <code>images/</code> and name them like <code>mountain1.jpg</code> → <code>mountain9.jpg</code>.</p>
 
-        <!-- Grid Demo 2: 3 Column -->
-        <section class="content-section">
-            <h3 class="demo-title">Three Column Grid</h3>
-            <div class="grid-container grid-3col">
-                <div class="grid-item">
-                    <span>Travel 1</span>
-                </div>
-                <div class="grid-item">
-                    <span>Travel 2</span>
-                </div>
-                <div class="grid-item">
-                    <span>Travel 3</span>
-                </div>
-            </div>
-        </section>
+    <section class="photo-grid">
+      <img src="images/mountain1.jpg" alt="mountain1">
+      <img src="images/mountain2.jpg" alt="mountain2">
+      <img src="images/mountain3.jpg" alt="mountain3">
+      <img src="images/mountain4.jpg" alt="mountain4">
+      <img src="images/mountain5.jpg" alt="mountain5">
+      <img src="images/mountain6.jpg" alt="mountain6">
+      <img src="images/mountain7.jpg" alt="mountain7">
+      <img src="images/mountain8.jpg" alt="mountain8">
+      <img src="images/mountain9.jpg" alt="mountain9">
+    </section>
+  </main>
 
-        <!-- Photo Gallery -->
-        <section class="content-section">
-            <h3 class="demo-title">Responsive Photo Gallery</h3>
-            <p style="text-align: center; margin-bottom: 2rem;">This grid automatically adjusts to screen size</p>
-            <div class="photo-gallery">
-                <div class="photo-item">
-                    <span>Extreme Sports 1</span>
-                </div>
-                <div class="photo-item">
-                    <span>Extreme Sports 2</span>
-                </div>
-                <div class="photo-item">
-                    <span>Nature 1</span>
-                </div>
-                <div class="photo-item">
-                    <span>Sunset 1</span>
-                </div>
-                <div class="photo-item">
-                    <span>Travel 1</span>
-                </div>
-                <div class="photo-item">
-                    <span>Nature 2</span>
-                </div>
-                <div class="photo-item">
-                    <span>Sunset 2</span>
-                </div>
-                <div class="photo-item">
-                    <span>Extreme Sports 3</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content Section -->
-        <section class="content-section">
-            <h2>About CSS Grid</h2>
-            <p>CSS Grid is ideal for creating complex layouts and photo galleries. Unlike Flexbox, which is one-dimensional, Grid allows you to control both rows and columns simultaneously.</p>
-            <p>This makes it perfect for displaying photography portfolios where you want precise control over image placement and spacing. The responsive gallery above automatically adjusts the number of columns based on screen size.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About</h4>
-                <p>Capturing life's beautiful moments through photography. Every image tells a story.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Categories</h4>
-                <p>Sunsets<br>Extreme Sports<br>Travel<br>Nature</p>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <p>Instagram<br>Email<br>Contact</p>
-            </div>
-            <div class="footer-section">
-                <h4>Site Info</h4>
-                <p>&copy; 2024 My Portfolio<br>All rights reserved</p>
-            </div>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <p>© 2025 MyPhotoSite</p>
+  </footer>
 </body>
 </html>
