@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Grid | Photo Gallery</title>
+  <meta charset="UTF-8">
+  <title>Mountain Gallery</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="logo">MyPhotoSite</a>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="flexbox.html">Flexbox</a>
-        <a href="grid.html" class="active">Grid</a>
-        <a href="blog-post.html">Blog</a>
-      </div>
-    </div>
-  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="blog-post.html">Blog Post</a></li>
+    </ul>
+  </nav>
 
-  <main class="container">
-    <h1>Photo Grid</h1>
-    <p class="lead">A 3×3 responsive grid. Drop your images into <code>images/</code> and name them like <code>mountain1.jpg</code> → <code>mountain9.jpg</code>.</p>
+  <header>
+    <h1>Mountain Moments</h1>
+    <p>A small collection of my favorite mountain photos</p>
+  </header>
 
-    <section class="photo-grid">
-      <img src="images/mountain1.jpg" alt="mountain1">
-      <img src="images/mountain2.jpg" alt="mountain2">
-      <img src="images/mountain3.jpg" alt="mountain3">
-      <img src="images/mountain4.jpg" alt="mountain4">
-      <img src="images/mountain5.jpg" alt="mountain5">
-      <img src="images/mountain6.jpg" alt="mountain6">
-      <img src="images/mountain7.jpg" alt="mountain7">
-      <img src="images/mountain8.jpg" alt="mountain8">
-      <img src="images/mountain9.jpg" alt="mountain9">
-    </section>
-  </main>
+  <section class="grid-gallery">
+    <div class="grid-item"><img src="images/mountain1.jpg" alt="Mountain 1"></div>
+    <div class="grid-item"><img src="images/mountain2.jpg" alt="Mountain 2"></div>
+    <div class="grid-item"><img src="images/mountain3.jpg" alt="Mountain 3"></div>
+  </section>
 
-  <footer class="site-footer">
-    <p>© 2025 MyPhotoSite</p>
+  <footer>
+    <p>My Photo Portfolio · Dark Theme</p>
   </footer>
 </body>
 </html>

@@ -2,62 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photo Portfolio - Flexbox</title>
+  <title>Photo Categories</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="flexbox.html">Flexbox</a>
-    <a href="grid.html">Grid</a>
-    <a href="blog-post.html">Blog Post</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="blog-post.html">Blog Post</a></li>
+    </ul>
   </nav>
 
-  <h1 class="page-title">My Favorite Shots</h1>
+  <header>
+    <h1>Photo Categories</h1>
+    <p>A showcase of my favorite photos grouped by theme</p>
+  </header>
 
-  <div class="flex-container">
-    <div class="card">
-      <img src="images/mountain1.jpg" alt="Mountain 1">
-      <p>Sunset over the ridge</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain2.jpg" alt="Mountain 2">
-      <p>Cliffside climb</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain3.jpg" alt="Mountain 3">
-      <p>Snowy peak</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain4.jpg" alt="Mountain 4">
-      <p>Trail to the summit</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain5.jpg" alt="Mountain 5">
-      <p>Rock formation</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain6.jpg" alt="Mountain 6">
-      <p>Early morning mist</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain7.jpg" alt="Mountain 7">
-      <p>Rugged landscape</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain8.jpg" alt="Mountain 8">
-      <p>Sunrise horizon</p>
-    </div>
-    <div class="card">
-      <img src="images/mountain9.jpg" alt="Mountain 9">
-      <p>Extreme climbing</p>
-    </div>
-  </div>
+  <section class="flex-gallery">
+    <!-- Sunsets -->
+    <div class="flex-item"><img src="images/sunset1.jpg" alt="Sunset 1"></div>
+    <div class="flex-item"><img src="images/sunset2.jpg" alt="Sunset 2"></div>
+
+    <!-- Extreme Sports -->
+    <div class="flex-item"><img src="images/extreme1.jpg" alt="Extreme Sport 1"></div>
+    <div class="flex-item"><img src="images/extreme2.jpg" alt="Extreme Sport 2"></div>
+
+    <!-- Travel -->
+    <div class="flex-item"><img src="images/travel1.jpg" alt="Travel 1"></div>
+    <div class="flex-item"><img src="images/travel2.jpg" alt="Travel 2"></div>
+
+    <!-- Mountains -->
+    <div class="flex-item"><img src="images/mountain1.jpg" alt="Mountain 1"></div>
+    <div class="flex-item"><img src="images/mountain2.jpg" alt="Mountain 2"></div>
+    <div class="flex-item"><img src="images/mountain3.jpg" alt="Mountain 3"></div>
+  </section>
 
   <footer>
-    <p>Designed for Web Design Class · Dark Theme Portfolio</p>
+    <p>My Photo Portfolio · Dark Theme</p>
   </footer>
-
 </body>
 </html>
